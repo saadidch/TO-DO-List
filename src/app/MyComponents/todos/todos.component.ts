@@ -28,6 +28,11 @@ export class TodosComponent {
         active: true
       }
     ]
+
+
   }
 
+  deleteTodo(todo: Todo) {
+    console.log(todo);
+  }
 }
