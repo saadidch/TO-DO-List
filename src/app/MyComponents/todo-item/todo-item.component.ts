@@ -8,4 +8,11 @@ import {Todo} from "../../Todo";
 })
 export class TodoItemComponent {
 @Input() todo!: Todo;
+@Output() todoDelete: EventEmitter<Todo> = new EventEmitter();
+onClick(todo: Todo){
+
+  this.todoDelete.emit(todo);
+  console.log("Trigger.")
+}
+
 }
