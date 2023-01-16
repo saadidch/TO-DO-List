@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { Todo } from "../../Todo";
-import {TodoItemComponent} from "../todo-item/todo-item.component";
 
 @Component({
   selector: 'app-todos',
@@ -31,6 +30,8 @@ export class TodosComponent {
     ]
   }
   deleteTodo(todo: Todo){
-    console.log("another one")
+    console.log("another one");
+    const index = this.todos.indexOf(todo);
+    this.todos.splice(index, 1)
   }
 }
