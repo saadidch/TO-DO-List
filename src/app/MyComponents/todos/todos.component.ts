@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Todo } from "../../Todo";
+import {TodoItemComponent} from "../todo-item/todo-item.component";
 
 @Component({
   selector: 'app-todos',
@@ -28,11 +29,5 @@ export class TodosComponent {
         active: true
       }
     ]
-
-
-  }
-
-  deleteTodo(todo: Todo) {
-    console.log(todo);
   }
 }
