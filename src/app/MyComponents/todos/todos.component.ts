@@ -30,8 +30,12 @@ export class TodosComponent {
     ]
   }
   deleteTodo(todo: Todo){
-    console.log("another one");
+    console.log("Delete");
     const index = this.todos.indexOf(todo);
     this.todos.splice(index, 1)
+  }
+  addTodo(todo: Todo){
+    console.log("Add");
+    this.todos.push(todo)
   }
 }
