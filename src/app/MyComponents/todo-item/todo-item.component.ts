@@ -14,5 +14,7 @@ onClick(todo: Todo){
   this.todoDelete.emit(todo);
   console.log("Trigger.")
 }
+  onCheckBox(todo){
+  }
 
 }
