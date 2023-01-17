@@ -15,6 +15,7 @@ onClick(todo: Todo){
   console.log("Trigger.")
 }
   onCheckBox(todo){
+
   }
 
 }
